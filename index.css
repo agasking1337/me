@@ -185,12 +185,33 @@ body {
     transition:0.4s ease-in-out;
 }
 
-img {
+#about_img {
     position: absolute;
     top: 10px;
     right: 10px;
     height: 80%;
     width: 50%;
+}
+
+.image_showcase {
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+
+.images {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#work_img {
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+#work_img:hover {
+    transform: scale(1.05);
 }
 
 .container div:hover {
@@ -355,8 +376,11 @@ img {
     .container form textarea {
         width:90%;
     }
-    img {
+    #about_img {
         display: none;
+    }
+    .image_showcase {
+        column-count: 1;
     }
     #menu {
         display:inline-block;
